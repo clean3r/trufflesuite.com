@@ -314,7 +314,7 @@ To test the `adopt()` function, recall that upon success it returns the given `p
      uint expected = 8;
 
      Assert.equal(returnedId, expected, "Adoption of pet ID 8 should be recorded.");
-   }
+   
    ```
 
 Things to notice:
@@ -359,6 +359,7 @@ Since arrays can only return a single value given a single key, we create our ow
      address[16] memory adopters = adoption.getAdopters();
 
      Assert.equal(adopters[8], expected, "Owner of pet ID 8 should be recorded.");
+   }
    }
    ```
 
